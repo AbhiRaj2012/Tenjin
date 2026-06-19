@@ -29,13 +29,13 @@ sleep 2
 # 6. Open the Frontend in the default browser
 echo "[*] Launching Application in Browser..."
 if which xdg-open > /dev/null; then
-  xdg-open index.html
+  xdg-open http://localhost:5000
 elif which gnome-open > /dev/null; then
-  gnome-open index.html
+  gnome-open http://localhost:5000
 elif which open > /dev/null; then
-  open index.html
+  open http://localhost:5000
 else
-  echo "Could not detect the web browser to open. Please open index.html manually."
+  echo "Please open http://localhost:5000 manually."
 fi
 
 echo ""
