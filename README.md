@@ -28,4 +28,4 @@ Tenjin AI is an intelligent, interactive Japanese learning companion featuring d
 
 3. **Configure**:
    Once the window opens in your browser at `http://localhost:5000`, navigate to **Settings** and input your API key to begin.
-```
+
