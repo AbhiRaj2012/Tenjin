@@ -1,0 +1,17 @@
+# Sensitive Information
+.env
+
+# API Keys (if you saved them in a local config file)
+config.json
+
+# Python system files
+__pycache__/
+*.pyc
+
+# IDE/Editor settings
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tenjin — Japanese Learning Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <aside class="sidebar">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <img src="assets/images/tenjin_icon.png" alt="Tenjin Logo">
+                </div>
+                <h2>Tenjin AI</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-tab="dashboard"><span>🏠</span> Dashboard</a>
+                <a href="#" class="nav-item" data-tab="learn"><span>📚</span> Let's Learn</a>
+                <a href="#" class="nav-item" data-tab="chat"><span>💬</span> Chat with Tenjin</a>
+                <a href="#" class="nav-item" data-tab="profile"><span>👤</span> Profile</a>
+                <a href="#" class="nav-item" data-tab="settings"><span>⚙️</span> Settings</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            
+            <header class="top-header">
+                <div class="welcome-text">
+                    <h1 id="header-greeting">Konnichiwa, Learner! 👋</h1>
+                    <p id="header-subtitle">Track your progress and continue your journey.</p>
+                </div>
+                <div class="header-controls">
+                    
+                    <div class="toggle-group">
+                        <span class="toggle-label">Theme:</span>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span id="theme-status" class="status-badge">Light</span>
+                    </div>
+                </div>
+            </header>
+
+            <div id="dynamic-view"></div>
+        </main>
+    </div>
+
+    <div class="floating-chat-head" id="floating-chat-trigger">
+        <div class="avatar-circle pulse">話</div>
+    </div>
+
+    <script src="js/components/dashboard.js"></script>
+    <script src="js/components/settings.js"></script>
+    <script src="js/components/learn.js"></script>
+    <!-- INDEPENDENT LEVEL MODULES -->
+    <script src="js/components/level1.js"></script>
+    <script src="js/components/level2.js"></script>
+    <script src="js/components/level3.js"></script>
+    <script src="js/components/level4.js"></script>
+    
+    <script src="js/components/chat.js"></script>
+    <script src="js/components/assessment.js"></script>
+    <script src="js/data/quiz_bank.js"></script>
+    <script src="js/components/profile.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
