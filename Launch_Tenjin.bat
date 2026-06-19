@@ -28,7 +28,7 @@ timeout /t 3 /nobreak >nul
 
 :: 5. Open the Frontend in the default browser
 echo [*] Launching Application in Browser...
-start "" "index.html"
+start "" "http://localhost:5000"
 
 echo.
 echo ===================================================
