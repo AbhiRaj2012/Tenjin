@@ -17,59 +17,15 @@ Tenjin AI is an intelligent, interactive Japanese learning companion featuring d
 
 
 
-## 🛠️ Project Structure & Syntax Notation
+## 📦 Quick Setup
 
-The project follows a component-based architecture for modularity.
+1. **Install Dependencies**: 
+   Check `requirements.md` for the list of required libraries.
 
-### 1. Assessment Syntax
+2. **Launch the Application**:
+   * **Windows**: Double-click `Launch_Tenjin.bat`.
+   * **Mac/Linux**: Open your terminal, navigate to the folder, and run `./Launch_Tenjin.sh`.
 
-The engine uses a standard JSON schema for all quiz data stored in `js/data/quiz_bank.js`:
-
-```json
-{
-  "question": "String", 
-  "options": ["String", "String", "String", "String"], 
-  "correct_index": Integer (0-3), 
-  "explanation": "String"
-}
-
-```
-
-### 2. Core Functions
-
-* **`gen_assessment(levelKey, container)`**: Initializes a 10-question randomized test for a specific level.
-
-
-* **`full_quiz(container)`**: Pulls 5 questions from each of the 4 levels for a comprehensive 20-question challenge.
-
-
-* **`TenjinDashboardView.updateStreak()`**: Automatically calculates and persists user streaks based on `localStorage` dates.
-
-
-
-## 📦 Setup Instructions
-
-1. **Repository Initialization**:
-```bash
-git init
-git add .
-git commit -m "Initial commit: Tenjin AI Learning Platform"
-
-```
-
-
-
-```
-
-2.  **Running the Backend**:
-    Execute `python server.py` to start the local Flask server[cite: 1].
-
-3.  **Launching the Application**:
-    Open your browser and navigate to `http://localhost:5000`[cite: 1]. 
-    *Warning: Accessing via `file:///` will block microphone input and security features[cite: 1].*
-
----
-
-*Tenjin AI - Built for high-performance, local-first learning[cite: 1].*
-
+3. **Configure**:
+   Once the window opens in your browser at `http://localhost:5000`, navigate to **Settings** and input your API key to begin.
 ```
